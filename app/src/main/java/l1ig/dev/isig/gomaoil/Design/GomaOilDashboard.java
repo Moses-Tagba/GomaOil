@@ -10,6 +10,7 @@ import android.widget.Toast;
 import l1ig.dev.isig.gomaoil.MainActivity;
 import l1ig.dev.isig.gomaoil.R;
 import l1ig.dev.isig.gomaoil.gui.AbonneActivity;
+import l1ig.dev.isig.gomaoil.gui.MapsActivity;
 import l1ig.dev.isig.gomaoil.gui.StationActivity;
 import l1ig.dev.isig.gomaoil.gui.sendMessageActivity;
 
@@ -64,7 +65,7 @@ public abstract class GomaOilDashboard extends Activity {
                 startActivity(new Intent(getApplicationContext(),AbonneActivity.class));
                 break;
             case R.id.btn_pmt:
-                Toast.makeText(getApplicationContext(), "Bouton de Paiement", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), MapsActivity.class));
                 break;
             case R.id.btn_infos:
                 Toast.makeText(getApplicationContext(), "Bouton Information", Toast.LENGTH_SHORT).show();
